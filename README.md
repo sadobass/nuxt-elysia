@@ -54,7 +54,13 @@ export default defineNuxtConfig({
   modules: [
     // ...
 	  'nuxt-elysia'
-  ]
+  ],
+  nuxtElysia: {
+    path: '/api',
+  },
+  nitro: {
+    preset: 'Bun'
+  }
 })
 ```
 
