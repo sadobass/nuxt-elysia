@@ -61,6 +61,7 @@ export default defineNuxtConfig({
 Create `api.ts` in the project root:
 
 ```ts
+import Elysia from "elysia"
 export default () => new Elysia()
   .get('/hello', () => ({ message: 'Hello world!' }))
 ```
@@ -320,9 +321,9 @@ uses Node.js (if both Node.js and Bun are available). Therefore, you need to add
 ```json
 {
   "scripts": {
-    "dev": "bun --bun dev",
-    "build": "bun --bun build",
-    "preview": "bun --bun preview"
+    "dev": "nuxt --bun dev",
+    "build": "nuxt --bun build",
+    "preview": "nuxt --bun preview"
   }
 }
 ```
